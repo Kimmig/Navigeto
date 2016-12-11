@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/splash_screen"
+    android:fitsSystemWindows="true"
+    tools:context="com.navigeto.navigeto.ViewImageActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Test"
+            android:gravity="top|center"
+            android:textColor="#E3F2FD"
+            android:textSize="66sp"
+            android:id="@+id/textView"/>
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:layout_below="@+id/textView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/wallet_holo_blue_light"
+        android:id="@+id/imageView"
+        />
+
+</RelativeLayout>

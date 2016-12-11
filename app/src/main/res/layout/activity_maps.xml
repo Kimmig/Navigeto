@@ -1,0 +1,73 @@
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.navigeto.navigeto.MapsActivity">
+
+<Button
+    android:id="@+id/search_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.5"
+    android:onClick="onMapSearch"
+    android:text="Search"
+    android:layout_alignParentRight="true"
+    android:layout_gravity="right|top" />
+
+
+<EditText
+    android:id="@+id/editText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Search ... "
+    android:layout_toLeftOf="@+id/search_button"
+    />
+
+<fragment
+    android:id="@+id/map"
+    android:layout_below="@+id/editText"
+    android:layout_above="@+id/footer"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.navigeto.navigeto.MapsActivity"
+    android:layout_gravity="bottom"
+    android:gravity="fill" />
+
+    <LinearLayout
+    android:id="@+id/footer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true"
+    android:background="#e7f5f7">
+
+    <ImageButton
+        android:id="@+id/buttonCurrent"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/current" />
+
+    <ImageButton
+        android:id="@+id/buttonSave"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/save" />
+
+    <ImageButton
+        android:id="@+id/buttonView"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/view" />
+</LinearLayout>
+</RelativeLayout>
+
+
+

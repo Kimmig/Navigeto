@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Navigeto</string>
+    <string name="camera_button">&#xf030; Take Picture</string>
+
+    <string name="emailerror">Enter a valid Email ID</string>
+    <string name="mobileerror">Enter a valid Mobile no</string>
+    <string name="passworderror">Enter a valid Password : 8 chars, atleast 1 caps, 1 number and 1 special char</string>
+    <string name="nameerror">Enter an alphanumeric nickname (3-10 char), you may include _ or - </string>
+    <string name="title_activity_trip_init">TripInitActivity</string>
+    <string name="title_activity_update_profile">UpdateProfileActivity</string>
+    <string name="preference_file_key" />
+    <string name="title_activity_view_image">ViewImageActivity</string>
+    <string name="title_activity_maps">Map</string>
+
+</resources>
